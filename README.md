@@ -42,7 +42,7 @@ Below is a brief layput of the various files required in the different directori
 
 To start training the model, you now need the model and its corresponding config file. I have used the mobilenet_coco model for the training. You can pickup a model and its config from the official tensorflow/models directory in github.
 
-Paramter changes in config file:
+<ins>Paramter changes in config file</ins>
 num_classes: 8 #number of classes to detect while training
 batch_size: 8 #based on your requirements
 fine_tune_checkpoint: "path to the model folder/ssd_mobilenet_v1_coco/model.ckpt"
