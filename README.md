@@ -2,7 +2,7 @@
 
 Problem Description - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human. Accordingly trigger/adjust audible alarms (increase volume if human is present, decrease otherwise) at the railway crossover.
 
-##Steps for execution of Object Detection
+**Steps for execution of Object Detection**
 1. Split Video into frames/images. 
 The video_to_image.py file helps to achieve this with a framerate of 0.01 (image captured every 0.01sec of the video)
 
