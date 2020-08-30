@@ -55,7 +55,7 @@ Execute the model_main.py to start training. Launch TensorBoard to view the perf
 
  ![tensorboard files](individualImage.png)
  
-**5. Testing your Model**
+**6. Testing your Model**
 Execute the object_detection_tutorial.ipynb file to perform testing on images that have not been used to train the model.
 
 <p align="center">
