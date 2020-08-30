@@ -9,11 +9,14 @@ The video_to_image.py file helps to achieve this with a framerate of 0.01 (image
 
 ![image from video](frame2051.jpg)
 
-![xml for image](xml1206.JPG)
 
 **2. Object Detection and Mapping**
 
-I have used the inception-v2 a pretrained model for object detection. The object_detection.py code has functions to detect objects in a frame/image and create an XML file corresponding to each image/frame which contains the class number, class name and dimensions of the detection box around each object in the frame. Now, Create folders test and train in images as shown in the layout below. Copy 85% of the images into train and 15% into test folders.Past the XML files into the corresponding train and test folder.
+I have used the inception-v2 a pretrained model for object detection. The object_detection.py code has functions to detect objects in a frame/image and create an XML file corresponding to each image/frame which contains the class number, class name and dimensions of the detection box around each object in the frame. 
+
+![xml for image](xml1206.JPG)
+
+Now, Create folders test and train in images as shown in the layout below. Copy 85% of the images into train and 15% into test folders.Past the XML files into the corresponding train and test folder.
 
 ![obj-detn for image](frame1206.jpg)
 
