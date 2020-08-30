@@ -66,5 +66,7 @@ Execute the object_detection_tutorial.ipynb file to perform testing on images th
     <img src="o2.JPG" alt="prediction2" width="500" height="250" />
 </p>
  
+ You will observe that in the figure above the person in the upper half of the frame is not predicted. There could be many reasons to this like darkness, small dataset etc. A detailed analysis of this will be uploaded as I am working to improve this model.
+ 
 **Good Luck! You will come across 100's of errors but do not give up :)**
 **You have Stackoverflow to your rescue**
