@@ -8,7 +8,7 @@ Problem Description - Detect moving objects at a railway crossover and classify 
 The video_to_image.py file helps to achieve this with a framerate of 0.01 (image captured every 0.01sec of the video).
 
 <p align="center">
-    <img src="frame2051.jpg" alt="Image" width="600" height="400" />
+    <img src="frame2051.jpg" alt="Image" width="600" height="250" />
 </p>
 
 **2. Object Detection and Mapping**
@@ -23,9 +23,8 @@ I have used the inception-v2 a pretrained model for object detection. The object
 Now, Create folders test and train in images as shown in the layout below. Copy 85% of the images into train and 15% into test folders.Past the XML files into the corresponding train and test folder.
 
 <p align="center">
-    <img src="frame1206.jpg" alt="obj-detn for image" width="400" height="600" />
+    <img src="frame1206.jpg" alt="obj-detn for image" width="600" height="250" />
 </p>
-
 
 **3. XML to CSV**
 
@@ -39,11 +38,7 @@ The code generate_tf_record.py creates a tfrecord file each for the train and te
 
 Below is a brief layput of the various files required in the different directories before you can execute the model_main.py file.
 
-<p align="center">
-    <img src="layout.png" alt="layout image" width="600" height="400" />
-</p>
-
-   ![layout image](layout.png) 
+![layout image](layout.png) 
 
 To start training the model, you now need the model and its corresponding config file. I have used the mobilenet_coco model for the training. You can pickup a model and its config from the official tensorflow/models directory in github.
 
