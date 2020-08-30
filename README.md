@@ -1,6 +1,6 @@
 # Object-Detection with pretrained Inception_v2 and Mobilenet Neural Nets
 
-Problem Description - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human. Accordingly trigger/adjust audible alarms (increase volume if human is present, decrease otherwise) at the railway crossover.
+**Problem Description** - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human. Accordingly trigger/adjust audible alarms (increase volume if human is present, decrease otherwise) at the railway crossover.
 
 **Steps for execution of Object Detection**
 **1. Split Video into frames/images.**
