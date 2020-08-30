@@ -54,6 +54,6 @@ label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in th
 Execute the model_main.py to start training. Launch TensorBoard to view the performance of training your model through Scalars and Images.
 
  ![tensorboard files](individualImage.png)
-
-<p><span style="color:blue"><em>*Good Luck! You will come across 100's of errors but do not give up :)*</em></span></p>
-*You have Stackoverflow to your rescue*
+ 
+**Good Luck! You will come across 100's of errors but do not give up :)**
+**You have Stackoverflow to your rescue**
