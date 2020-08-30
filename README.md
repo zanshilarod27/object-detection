@@ -44,13 +44,9 @@ To start training the model, you now need the model and its corresponding config
 
 Paramter changes in config file:
 num_classes: 8 #number of classes to detect while training
-
 batch_size: 8 #based on your requirements
-
 fine_tune_checkpoint: "path to the model folder/ssd_mobilenet_v1_coco/model.ckpt"
-
 input_path: "path to the training tfrecord /train/test_label.record" -- in the train_input_reader and eval_input_reader
-
 label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in the train_input_reader and eval_input_reader
 
 
@@ -58,3 +54,4 @@ Execute the model_main.py to start training. Launch TensorBoard to view the perf
 
  ![tensorboard files](individualImage.png)
 
+Good Luck!
