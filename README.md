@@ -59,10 +59,11 @@ Execute the model_main.py to start training. Launch TensorBoard to view the perf
 Execute the object_detection_tutorial.ipynb file to perform testing on images that have not been used to train the model.
 
 <p align="center">
-    <img src="o1.jpg" alt="prediction1" width="500" height="250" />
+    <img src="o1.JPG" alt="prediction1" width="500" height="250" />
 </p>
+
 <p align="center">
-    <img src="o2.jpg" alt="prediction2" width="500" height="250" />
+    <img src="o2.JPG" alt="prediction2" width="500" height="250" />
 </p>
  
 **Good Luck! You will come across 100's of errors but do not give up :)**
