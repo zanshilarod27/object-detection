@@ -1,4 +1,4 @@
-# Object-Detection with pretrained Inception_v2 and Mobilenet model
+# Object-Detection with pretrained Inception_v2 and Mobilenet Neural Nets
 
 Problem Description - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human. Accordingly trigger/adjust audible alarms (increase volume if human is present, decrease otherwise) at the railway crossover.
 
@@ -54,6 +54,9 @@ label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in th
 Execute the model_main.py to start training. Launch TensorBoard to view the performance of training your model through Scalars and Images.
 
  ![tensorboard files](individualImage.png)
+ 
+**5. Testing your Model**
+
  
 **Good Luck! You will come across 100's of errors but do not give up :)**
 **You have Stackoverflow to your rescue**
