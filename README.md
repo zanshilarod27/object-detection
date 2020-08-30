@@ -33,4 +33,5 @@ fine_tune_checkpoint: "path to the model folder/ssd_mobilenet_v1_coco/model.ckpt
 input_path: "path to the training tfrecord /train/test_label.record" -- in the train_input_reader and eval_input_reader
 label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in the train_input_reader and eval_input_reader
 
+
 Execute the model_main.py to start training.
