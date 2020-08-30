@@ -6,8 +6,10 @@ Problem Description - Detect moving objects at a railway crossover and classify 
 **1. Split Video into frames/images.**
 
 The video_to_image.py file helps to achieve this with a framerate of 0.01 (image captured every 0.01sec of the video).
-   
-![image from video](frame2051.jpg){width="800" height="600" style="display: block; margin: 0 auto"}
+
+<img src="frame2051.jpg" alt="Image" width="400" height="200" style="display: block; margin: 0 auto" />
+
+![image from video](frame2051.jpg)
 
 **2. Object Detection and Mapping**
 
