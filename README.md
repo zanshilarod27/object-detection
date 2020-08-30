@@ -55,5 +55,5 @@ Execute the model_main.py to start training. Launch TensorBoard to view the perf
 
  ![tensorboard files](individualImage.png)
 
-<p>*Good Luck! You will come across 100's of errors but do not give up :)*<span style="color:blue">some <em>blue</em> text</span>.</p>
+<p><span style="color:blue"><em>*Good Luck! You will come across 100's of errors but do not give up :)*</em></span></p>
 *You have Stackoverflow to your rescue*
