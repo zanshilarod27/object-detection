@@ -18,3 +18,5 @@ The code generate_tf_record.py creates a tfrecord file each for the train and te
 5. Model Training
 To train the model, the tfrecords created in the previous step have to be used. Below is a brief layput of the various files required in the different directories before you can execute the model_main.py file.
 
+![layout image](layout.png)
+
