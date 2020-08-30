@@ -55,5 +55,5 @@ Execute the model_main.py to start training. Launch TensorBoard to view the perf
 
  ![tensorboard files](individualImage.png)
 
-***Good Luck! You will come across 100's of errors but do not give up :) 
-You have Stackoverflow to your rescue
+***Good Luck! You will come across 100's of errors but do not give up :) ***
+***You have Stackoverflow to your rescue***
