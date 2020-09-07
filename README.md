@@ -25,7 +25,7 @@ Now, Create folders test and train in images as shown in the layout below. Copy 
 
 
 <p align="center">
-    <img src="frame1206.jpg" alt="obj-detn for image" width="500" height="250" />
+    <img src="ggif2po.gif" alt="obj-detn for image" width="500" height="250" />
 </p>
 
 **3. XML to CSV**
