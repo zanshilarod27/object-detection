@@ -61,11 +61,11 @@ Execute the model_main.py to start training. Launch TensorBoard to view the perf
 Execute the *object_detection_tutorial.ipynb* file to perform testing on images that have not been used to train the model.
 
 <p align="center">
-    <img src="o1.JPG" alt="prediction1" width="500" height="250" />
+    <img src="of.gif" alt="prediction1" width="500" height="250" />
 </p>
 
 <p align="center">
-    <img src="o2.JPG" alt="prediction2" width="500" height="250" />
+    <img src="of1.gif" alt="prediction2" width="500" height="250" />
 </p>
  
  You will observe that in the figure above the person in the upper half of the frame is not predicted. There could be many reasons to this like darkness, small dataset etc. A detailed analysis of this will be uploaded as I am working to improve this model.
