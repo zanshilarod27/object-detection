@@ -1,12 +1,12 @@
 # Object-Detection with pretrained Inception_v2 and Mobilenet Neural Nets
 
-**Problem Description** - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human. Accordingly trigger/adjust audible alarms (increase volume if human is present, decrease otherwise) at the railway crossover.
+**Problem Description** - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human to help improve safety.
 
 **Steps for execution of Object Detection**
 
 **1. Split Video into frames/images.**
 
-The *video_to_image.py* file helps to achieve this with a framerate of 0.01 (image captured every 0.01sec of the video).
+The video output from the CCTV camera is split into images/frames using the OpenCV library of Python. These images are fed to the Inception Convolutional Neural Network to create annotations for objects detected in an image.The *video_to_image.py* file helps to achieve this with a framerate of 0.01 (image captured every 0.01sec of the video).
 
 <p align="center">
     <img src="frame2051.jpg" alt="Image" width="500" height="250" />
@@ -14,7 +14,7 @@ The *video_to_image.py* file helps to achieve this with a framerate of 0.01 (ima
 
 **2. Object Detection and Mapping**
 
-I have used the inception-v2 a pretrained model for object detection. The *object_detection.py* code has functions to detect objects in a frame/image and create an XML file corresponding to each image/frame containing the class number, class name and dimensions of the detection boxes around each object in the frame. Below is an XML file for an image. Each <object> has specifications of the object detected by the model
+I have used the inception-v2 a pretrained model to create annotations for the objects deetcted ina an image. The *object_detection.py* code has functions to detect objects in a frame/image and create an XML file corresponding to each image/frame containing the class number, class name and dimensions of the detection boxes around each object in the frame. Below is an XML file for an image. Each <object> has specifications of the object detected by the model.
 
 <p align="center">
     <img src="xml1206.JPG" alt="xml for image" width="400" height="600" />
@@ -30,7 +30,7 @@ Now, Create folders test and train in images as shown in the layout below. Copy 
 
 **3. XML to CSV**
 
-The code *xml_to_csv.py* code creates a CSV file each for the train and test data present in the train and test data respectively.
+An XML file corresponding to each image/frame containing the class number, class name, and dimensions of the detection boxes around each object in the frame is created. The code *xml_to_csv.py* code creates a CSV file each for the train and test data present in the train and test data respectively.
 
 **4. TfRecords creation**
 
@@ -42,7 +42,7 @@ Below is a brief layput of the various files required in the different directori
 
 ![layout image](layout.png) 
 
-To start training the model, you now need the model and its corresponding config file. I have used the mobilenet_coco model for the training. You can pickup a model and its config from the official tensorflow/models directory in github.
+To start training the model, you now need the model and its corresponding config file. Reduced network size and faster performance made the Mobilenet CNN a great choice to perform the training. You can pickup a model and its config from the official tensorflow/models directory in github.
 
 <ins>Paramter changes in config file</ins>
 
