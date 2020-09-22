@@ -17,7 +17,7 @@ The video output from the CCTV camera is split into images/frames using the Open
 I have used the inception-v2 a pretrained model to create annotations for the objects deetcted ina an image. The *object_detection.py* code has functions to detect objects in a frame/image and create an XML file corresponding to each image/frame containing the class number, class name and dimensions of the detection boxes around each object in the frame. Below is an XML file for an image. Each <object> has specifications of the object detected by the model.
 
 <p align="center">
-    <img src="images readme/xml1206.JPG" alt="xml for image" width="400" height="600" />
+    <img src="images readme/xml1206.jpg" alt="xml for image" width="400" height="600" />
 </p>
 
 
@@ -40,7 +40,7 @@ The code *generate_tf_record.py* creates a tfrecord file each for the train and 
 
 Below is a brief layput of the various files required in the different directories before you can execute the *model_main.py* file.
 <p align="center">
-    <img src="images readme/layout.png" alt="Image" width="500" height="250" />
+    <img src="images readme/layout.png" alt="Image" width="800" height="250" />
 </p>
 
 To start training the model, you now need the model and its corresponding config file. Reduced network size and faster performance made the Mobilenet CNN a great choice to perform the training. You can pickup a model and its config from the official tensorflow/models directory in github.
@@ -56,7 +56,7 @@ label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in th
 
 Execute the model_main.py to start training. Launch TensorBoard to view the performance of training your model through Scalars and Images.
 <p align="center">
-    <img src="images readme/individualImage.png" alt="Image" width="500" height="250" />
+    <img src="images readme/individualImage.png" alt="Image" width="1000" height="250" />
 </p>
  
 **6. Testing your Model**
