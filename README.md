@@ -9,7 +9,7 @@
 The video output from the CCTV camera is split into images/frames using the OpenCV library of Python. These images are fed to the Inception Convolutional Neural Network to create annotations for objects detected in an image.The *video_to_image.py* file helps to achieve this with a framerate of 0.01 (image captured every 0.01sec of the video).
 
 <p align="center">
-    <img src="frame2051.jpg" alt="Image" width="500" height="250" />
+    <img src="images readme/frame2051.jpg" alt="Image" width="500" height="250" />
 </p>
 
 **2. Object Detection and Mapping**
@@ -17,7 +17,7 @@ The video output from the CCTV camera is split into images/frames using the Open
 I have used the inception-v2 a pretrained model to create annotations for the objects deetcted ina an image. The *object_detection.py* code has functions to detect objects in a frame/image and create an XML file corresponding to each image/frame containing the class number, class name and dimensions of the detection boxes around each object in the frame. Below is an XML file for an image. Each <object> has specifications of the object detected by the model.
 
 <p align="center">
-    <img src="xml1206.JPG" alt="xml for image" width="400" height="600" />
+    <img src="images readme/xml1206.JPG" alt="xml for image" width="400" height="600" />
 </p>
 
 
@@ -25,7 +25,7 @@ Now, Create folders test and train in images as shown in the layout below. Copy 
 
 
 <p align="center">
-    <img src="ggif2po.gif" alt="obj-detn for image" width="500" height="250" />
+    <img src="images readme/ggif2po.gif" alt="obj-detn for image" width="500" height="250" />
 </p>
 
 **3. XML to CSV**
@@ -40,7 +40,7 @@ The code *generate_tf_record.py* creates a tfrecord file each for the train and 
 
 Below is a brief layput of the various files required in the different directories before you can execute the *model_main.py* file.
 
-![layout image](layout.png) 
+![layout image](images readme/layout.png) 
 
 To start training the model, you now need the model and its corresponding config file. Reduced network size and faster performance made the Mobilenet CNN a great choice to perform the training. You can pickup a model and its config from the official tensorflow/models directory in github.
 
@@ -55,17 +55,17 @@ label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in th
 
 Execute the model_main.py to start training. Launch TensorBoard to view the performance of training your model through Scalars and Images.
 
- ![tensorboard files](individualImage.png)
+ ![tensorboard files](images readme/individualImage.png)
  
 **6. Testing your Model**
 Execute the *object_detection_tutorial.ipynb* file to perform testing on images that have not been used to train the model.
 
 <p align="center">
-    <img src="of.gif" alt="prediction1" width="500" height="250" />
+    <img src="images readme/of.gif" alt="prediction1" width="500" height="250" />
 </p>
 
 <p align="center">
-    <img src="of1.gif" alt="prediction2" width="500" height="250" />
+    <img src="images readme/of1.gif" alt="prediction2" width="500" height="250" />
 </p>
  
  You will observe that in the figure above the person in the upper half of the frame is not predicted. There could be many reasons to this like darkness, small dataset etc. A detailed analysis of this will be uploaded as I am working to improve this model.
