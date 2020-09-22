@@ -39,8 +39,9 @@ The code *generate_tf_record.py* creates a tfrecord file each for the train and 
 **5. Model Training**
 
 Below is a brief layput of the various files required in the different directories before you can execute the *model_main.py* file.
-
-![layout image](/images readme/layout.png) 
+<p align="center">
+    <img src="images readme/layout.png" alt="Image" width="500" height="250" />
+</p>
 
 To start training the model, you now need the model and its corresponding config file. Reduced network size and faster performance made the Mobilenet CNN a great choice to perform the training. You can pickup a model and its config from the official tensorflow/models directory in github.
 
@@ -54,8 +55,9 @@ label_map_path: "path to the pbtxt mapping file /objectdetection.pbtxt" -- in th
 
 
 Execute the model_main.py to start training. Launch TensorBoard to view the performance of training your model through Scalars and Images.
-
- ![tensorboard files](/images readme/individualImage.png)
+<p align="center">
+    <img src="images readme/individualImage.png" alt="Image" width="500" height="250" />
+</p>
  
 **6. Testing your Model**
 Execute the *object_detection_tutorial.ipynb* file to perform testing on images that have not been used to train the model.
