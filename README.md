@@ -1,6 +1,6 @@
 # Object-Detection with pretrained Inception_v2 and Mobilenet Neural Nets
 
-**Problem Description** - Detect moving objects at a railway crossover and classify them as human (pedestrian, cyclist or vehicle) and not human to help improve safety.
+**Problem Description** - Detect moving objects and classify them as human.
 
 **Steps for execution of Object Detection**
 
